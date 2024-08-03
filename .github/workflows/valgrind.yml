@@ -105,5 +105,3 @@ jobs:
         with:
           name: valgrind-report-${{ github.event.repository.name}}-on-${{ matrix.os }}-from_branch_${{ github.ref_name }}
           path: './valgrind_reports/*'
-          name: valgrind-report-${{ github.event.repository.name}}-on-${{ matrix.os }}-from_branch_${{ github.ref_name }}
-          path: './valgrind_reports/*'
