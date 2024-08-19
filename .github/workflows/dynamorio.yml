@@ -38,7 +38,7 @@ jobs:
 
       - name: Make parent folder
         run: mkdir -p dynamoriologs
-                           
+
       - name: Run DynamoRIO (Memtrace)
         run: |
           #!/bin/bash
@@ -110,7 +110,7 @@ jobs:
           find "$LOG_DIR" -type f -size 0 -delete
           
           echo "=========[DynamoRIO Memtrace service finished]========="
-                    
+          
       - name: Upload DynamoRIO aggregated reports
         uses: actions/upload-artifact@v4
         with:
